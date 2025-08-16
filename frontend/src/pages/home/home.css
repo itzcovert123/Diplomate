@@ -1,0 +1,166 @@
+/* Home Base Styles */
+.home {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+  padding: 6rem 2rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  animation: fadeIn 1s ease-in;
+}
+
+.hero-content {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+/* Typing Animation: Title */
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  background: linear-gradient(to right, #1d2671, #c33764);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  min-height: 4.5rem;
+  /* Maintain height during typing transitions */
+  animation: slideInDown 1s ease-in-out;
+}
+
+/* Typing Animation: Subtitle */
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+  min-height: 3rem;
+  animation: fadeIn 2s ease-in-out;
+  background: linear-gradient(to right, #c33764, #1d2671);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Hero Button */
+.hero-btn {
+  background-color: #1d2671;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-btn:hover {
+  background-color: #c33764;
+  box-shadow: 0 0 15px rgba(195, 55, 100, 0.6);
+  transform: scale(1.05);
+}
+
+.hero-btn::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.1);
+  transition: height 0.3s;
+}
+
+.hero-btn:hover::after {
+  height: 100%;
+}
+
+/* Lottie Animation Styling */
+.hero-animation {
+  flex: 1;
+  max-width: 500px;
+  margin-left: 2rem;
+}
+
+.hero-animation svg {
+  width: 100%;
+  height: auto;
+}
+
+/* Typing Animation Section */
+.typing-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #222;
+  text-align: center;
+  margin: 3rem 0 1rem 0;
+  animation: fadeIn 2s ease-in-out;
+  min-height: 3rem;
+}
+
+/* Features Section */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  padding: 4rem 2rem;
+  background-color: #ffffff;
+}
+
+.feature-card {
+  background-color: #f8f8f8;
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  transform-style: preserve-3d;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px) rotateX(3deg) rotateY(3deg);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.feature-card h2 {
+  font-size: 1.5rem;
+  color: #1d2671;
+  margin-bottom: 1rem;
+}
+
+.feature-card p {
+  color: #333;
+  font-size: 1rem;
+}
+
+/* Animations */
+@keyframes slideInDown {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

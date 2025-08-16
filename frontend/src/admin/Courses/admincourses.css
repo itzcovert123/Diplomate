@@ -1,0 +1,138 @@
+/* admincourses.css */
+
+.admin-courses {
+  display: flex;
+  padding: 30px;
+  gap: 40px;
+  background: linear-gradient(to right, #ffffff, #f9f9ff);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+}
+
+/* LEFT PANEL - All Courses */
+.left {
+  flex: 2;
+}
+
+.left h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.dashboard-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* COURSE CARD HOVER ANIMATION */
+.course-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* RIGHT PANEL - Add Course */
+.right {
+  flex: 1;
+  background-color: #ffffff;
+  border-radius: 14px;
+  padding: 25px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 20px;
+  height: fit-content;
+}
+
+.course-form h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Form Styling */
+.course-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.course-form label {
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.course-form input[type="text"],
+.course-form input[type="number"],
+.course-form select {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+  outline: none;
+  background-color: #f9fafb;
+  transition: border 0.2s;
+}
+
+.course-form input:focus,
+.course-form select:focus {
+  border-color: #6366f1;
+}
+
+.course-form input[type="file"] {
+  padding: 10px 0;
+}
+
+.course-form img {
+  border-radius: 8px;
+  margin-top: 10px;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+/* Buttons */
+.common-btn {
+  padding: 12px;
+  background-color: #4f46e5;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.common-btn:hover {
+  background-color: #4338ca;
+}
+
+.common-btn:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1000px) {
+  .admin-courses {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .right {
+    position: relative;
+    top: 0;
+    width: 100%;
+  }
+}

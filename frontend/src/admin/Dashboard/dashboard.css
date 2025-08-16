@@ -1,0 +1,46 @@
+/* dashboard.css */
+
+.main-content {
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.dashboard-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #333;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.box {
+  padding: 2rem;
+  background-color: #ffffff;
+  border: 2px solid #e0e0e0;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.box:hover {
+  transform: translateY(-4px);
+  border-color: #00bcd4;
+}
+
+.box p:first-child {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #555;
+}
+
+.box p:last-child {
+  font-size: 2.5rem;
+  color: #00796b;
+  font-weight: bold;
+}

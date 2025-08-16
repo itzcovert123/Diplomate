@@ -1,0 +1,63 @@
+/* users.css */
+
+.users {
+  padding: 2rem;
+  background-color: #fefefe;
+}
+
+.users-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #222;
+}
+
+.table-container {
+  overflow-x: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+  min-width: 600px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.styled-table thead {
+  background-color: #00bcd4;
+  color: white;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-child(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:hover {
+  background-color: #e0f7fa;
+  cursor: pointer;
+}
+
+.common-btn {
+  background-color: #009688;
+  color: white;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.common-btn:hover {
+  background-color: #00796b;
+}
