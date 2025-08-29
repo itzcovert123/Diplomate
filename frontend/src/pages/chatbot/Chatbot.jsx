@@ -18,7 +18,7 @@ const Chatbot = () => {
       const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
         method: "POST",
         headers: {
-          Authorization: "Bearer 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",
+          Authorization: "Bearer sk-or-v1-",
           "HTTP-Referer": "https://your-site.com",
           "X-Title": "DiploGuide",
           "Content-Type": "application/json",
