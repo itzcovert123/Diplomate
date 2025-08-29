@@ -30,15 +30,15 @@ Enhances self-learning experience
 
 🛠️ Tech Stack
 
-Frontend: React.js, TailwindCSS / Material UI (your choice)
+Frontend: React.js, 
 
 Backend: Node.js, Express.js
 
 Database: MongoDB (Mongoose ODM)
 
-Authentication: JWT / OAuth (if implemented)
+Authentication: JWT 
 
-Chatbot: Integrated AI assistant (Dialogflow / Deepseek API / custom NLP logic)
+Chatbot: Integrated AI assistant (Deepseek API  )
 
 📂 Project Structure
 Diplomate/
@@ -60,7 +60,7 @@ Diplomate/
 Clone the repository
 
 git clone https://github.com/your-username/Diplomate.git
-cd educonnect
+cd Diplomate
 
 
 Install dependencies
